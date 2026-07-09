@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Trial Showcase</title>
+    <script src="https://unpkg.com/jspsych@8.2.2"></script>
+    <link href="https://unpkg.com/jspsych@8.2.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/@jspsych/plugin-survey-likert@2.1.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-call-function@2.1.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-button-response@2.1.0"></script>
+    <style>
+        body {
+            /* Center the stimuli in the middle of the image */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #stimulus-container {
+            display: flex;
+            justify-content: center;
+            column-gap: 40px;
+            margin-bottom: 0px;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+        }
+
+        /* Let the Likert scale look a bit nicer */
+        input[type="radio"] {
+            margin-left: 7em;
+            margin-right: 7em;
+            margin-bottom: 0.5em;
+        }
+
+        #jspsych-progressbar-container {
+            position: fixed;
+            bottom: 0;
+            z-index: -500;
+        }
+
+        label.jspsych-survey-likert-statement {
+            padding-top: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Two separate canvases for the stimuli. These can be populated with webgl-->
+    <div id="stimulus-container">
+        <canvas id="canvasLeft" width="500" height="500"></canvas>
+        <canvas id="canvasRight" width="500" height="500"></canvas>
+    </div>
+    <!-- jsPsych content -->
+    <div id="jspsych-target"></div>
+    <script src="js/main.js?v=seed-12345"></script>
+
+</body>
+
+</html>
