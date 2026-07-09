@@ -66,13 +66,9 @@ The following image is a reference output from this package and corresponds to t
 
 ![Reference output for the reproducible first trial](.assets/replicability.png)
 
-## Graphics Replicability Stamp
+## Automatic Script
 
-For the Graphics Replicability Stamp Initiative, this artifact was prepared for:
-
-```text
-Ubuntu Desktop 20.04.1 LTS or newer
-```
+This repository also contains an automated unix script for starting a local python server and opening the browser window.
 
 It was checked in this environment:
 
